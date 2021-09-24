@@ -112,7 +112,7 @@ const Body = (props: ViewTvProps) => {
     } else {
         return html`
             ${Background(props)}
-
+            <img src="/mstile-310x310.png" style="width:100px; height:100px; position: absolute; top: 4px; left: 4px"/>
             <div class="upper">
                 <div class="playing-track">
                     ${srcsetImg(props.currentTrackMetadata!.cover, '49vh')}
@@ -167,7 +167,7 @@ const ViewTv = (props: ViewTvProps) => html`
         .upper {
             flex-direction: column;
             justify-content: center;
-            padding: 0 8.334vh;
+            padding: 0 9.334vh;
             overflow: hidden;
             flex-grow: 1;
             width: 100%;

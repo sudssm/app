@@ -116,7 +116,7 @@ const HomeView = (props: HomeViewProps & HomeViewDispatch) => html`
         ${festifyLogo}
     </header>
 
-    <p>Festify lets your guests choose which music should be played using their smartphones.</p>
+    <p>Sudarshan.rocks lets your guests choose which music should be played using their smartphones.</p>
 
     <main>
         <paper-input

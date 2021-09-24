@@ -76,7 +76,8 @@ const SearchBar = (props: SearchBarProps & SearchBarDispatch) => html`
               <paper-icon-button icon="festify:arrow-back" @click=${props.eraseText}>
               </paper-icon-button>
           `
-        : festifyLogo}
+        : 
+            html`<img src='/mstile-70x70.png' style="width:40px; object-fit: contain"/>`}
 
     <input
         value="${props.text}"

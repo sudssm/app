@@ -204,10 +204,6 @@ const QueueDrawer = (props: QueueDrawerProps & QueueDrawerDispatch) => html`
             <iron-icon icon="festify:tv"></iron-icon>
             TV Mode
         </a>
-        <a href="https://festify.rocks/" target="_blank">
-            <iron-icon icon="festify:home"></iron-icon>
-            Festify Homepage
-        </a>
         <a href="/" @click=${props.handleClick}>
             <iron-icon icon="festify:cancel"></iron-icon>
             Exit Party

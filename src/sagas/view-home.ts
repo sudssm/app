@@ -77,7 +77,7 @@ function* warnNonPremium() {
     yield put(
         showToast(
             // tslint:disable-next-line:max-line-length
-            "To create parties and play music on Festify, you need to have a 'Spotify Premium' account. Please login again using a premium account if you want to host parties.",
+            "To create parties and play music on Sudarshan.rocks, you need to have a 'Spotify Premium' account. Please login again using a premium account if you want to host parties.",
             10000,
         ),
     );
