@@ -104,7 +104,9 @@ const Body = (props: ViewTvProps) => {
                     <h1>Oh, no!</h1>
                 </div>
                 <h2>There are no tracks in the queue right now.</h2>
-                <h2>${props.text}</h2>
+                <h5>Scan to add music:</h5>
+                <br/>
+                <img style="width:300px; height:300px; margin: 0 auto" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.href.replace('/tv/', '/party/')}" padding="12"/>
             </div>
         `;
     } else {
@@ -121,12 +123,16 @@ const Body = (props: ViewTvProps) => {
 
                         <playback-progress-bar></playback-progress-bar>
 
-                        <h4>${props.text}</h4>
-                        <h5>Party Code: ${props.party && props.party.short_id}</h5>
+                        <h5>Scan to add music and vote:</h5>
+                        <br/>
+                        <div>
+                            <img style="width:300px; height:300px; margin-right:2vh" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${window.location.href.replace('/tv/', '/party/')}"/>
+                            <p style="display:inline-block; font-size:1.8vh;">Or, https://sudarshan.rocks | Enter Code: ${props.party && props.party.short_id}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+            <h5 style="padding-left: 8.334vh; font-size:3vh">Queue (votes):</h5>
             ${Lower(props)}
         `;
     }
