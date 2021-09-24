@@ -2,8 +2,8 @@
   "name": "politics",
   "description": "Festify voting worker",
   "dependencies": {
-    "firebase-admin": "^7.3.0",
-    "firebase-functions": "^2.3.0",
+    "firebase-admin": "^9.11.1",
+    "firebase-functions": "^3.15.7",
     "lodash": "^4.17.5",
     "quick-lru": "^1.1.0",
     "request": "^2.88.0",
@@ -25,6 +25,6 @@
   },
   "engineStrict": false,
   "engines": {
-    "node": "8"
+    "node": "10"
   }
 }
