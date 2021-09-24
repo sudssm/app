@@ -16,6 +16,10 @@ interface SearchBarDispatch {
     eraseText: () => void;
 }
 
+const searchBarIcon = html`
+    <img src='/mstile-70x70.png' style="width:40px; object-fit:contain;"/>
+`;
+
 /* tslint:disable:max-line-length */
 const SearchBar = (props: SearchBarProps & SearchBarDispatch) => html`
     ${sharedStyles}
@@ -76,8 +80,7 @@ const SearchBar = (props: SearchBarProps & SearchBarDispatch) => html`
               <paper-icon-button icon="festify:arrow-back" @click=${props.eraseText}>
               </paper-icon-button>
           `
-        : 
-            html`<img src='/mstile-70x70.png' style="width:40px; object-fit: contain"/>`}
+        : searchBarIcon}
 
     <input
         value="${props.text}"
